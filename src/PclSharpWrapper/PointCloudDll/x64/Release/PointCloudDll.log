@@ -1,0 +1,9 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  PointCloud.cpp
+  Unknown compiler version - please run the configure tests and report the results
+c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+    正在创建库 ..\..\..\bin\PointCloudDll.lib 和对象 ..\..\..\bin\PointCloudDll.exp
+  正在生成代码
+  All 1352 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  PointCloudDll.vcxproj -> C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PointCloudDll\..\..\..\bin\PointCloudDll.dll

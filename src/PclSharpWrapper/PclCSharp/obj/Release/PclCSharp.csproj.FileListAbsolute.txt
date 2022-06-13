@@ -1,0 +1,12 @@
+D:\c++_example\PclSharpWrapper\bin\PclCSharp.dll
+D:\c++_example\PclSharpWrapper\bin\PclCSharp.pdb
+D:\c++_example\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.csproj.CoreCompileInputs.cache
+D:\c++_example\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.dll
+D:\c++_example\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.pdb
+D:\c++_example\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.csprojAssemblyReference.cache
+C:\Users\user\Desktop\PclCSharp\bin\PclCSharp.dll
+C:\Users\user\Desktop\PclCSharp\bin\PclCSharp.pdb
+C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.csprojAssemblyReference.cache
+C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.dll
+C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.pdb
