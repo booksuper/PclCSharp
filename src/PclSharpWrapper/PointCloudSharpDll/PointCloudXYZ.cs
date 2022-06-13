@@ -27,6 +27,10 @@ namespace PointCloudSharp
         //返回点云的高
         [DllImport("PointCloudDll.dll", EntryPoint = "getPointCloudH", CharSet = CharSet.Auto)]
         public static extern int getPointCloudH(IntPtr PointCloudPointer);
+        //返回点云xyz的极值
+        [DllImport("PointCloudDll.dll", EntryPoint = "getMinMaxXYZ", CharSet = CharSet.Auto)]
+        public static extern void getMinMaxXYZ(IntPtr PointCloudPointer,double[] out_res);
+       
 
         //返回点云对应索引的X
         [DllImport("PointCloudDll.dll", EntryPoint = "getX", CharSet = CharSet.Auto)]
@@ -56,12 +60,7 @@ namespace PointCloudSharp
         private int _Width;
         private int _Height;
         private int _Size;
-        private double _minx;
-        private double _maxx;
-        private double _miny;
-        private double _maxy;
-        private double _minz;
-        private double _maxz;
+        
 
         //不用布尔值bool是因为C#中bool占4个字节，C++中占1个字节，直接传递会因为字节不一样出错
         // 声明width属性
@@ -94,6 +93,7 @@ namespace PointCloudSharp
             }
 
         }
+        
         //析构之后可能出错,目前都运行良好。他日若有问题，优先检查指针问题
         public IntPtr PointCloudXYZPointer
         {
@@ -173,6 +173,13 @@ namespace PointCloudSharp
         public void Clear()
         {
             clear(_PointCloudPointer);
+        }
+
+        ///@brief 获得点云中的极值
+        ///@details 使用一个double数组保存结果，第一第二个元素依次是x的最小值、最大值，后面依次类推
+        public void GetMinMaxXYZ(double[] out_res)
+        {
+            getMinMaxXYZ(_PointCloudPointer, out_res);
         }
 
     }

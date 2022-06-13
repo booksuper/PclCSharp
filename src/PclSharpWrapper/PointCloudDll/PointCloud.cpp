@@ -65,6 +65,22 @@ HEAD int CallingConvention getPointCloudW(pcl::PointCloud<pcl::PointXYZ> * pc)
 	return  pc->size();
 }
 
+//返回点云xyz的极值
+HEAD void CallingConvention getMinMaxXYZ(pcl::PointCloud<pcl::PointXYZ> * pc,double * out_res)
+{
+	pcl::PointXYZ minp(0, 0, 0);
+	pcl::PointXYZ maxp(0, 0, 0);
+	pcl::getMinMax3D(*pc, minp, maxp);
+	out_res[0] = minp.x;//最小x
+	out_res[1] = maxp.x;//最大x
+	out_res[2] = minp.y;//最小y
+	out_res[3] = maxp.y;//最大y
+	out_res[4] = minp.z;//最小z
+	out_res[5] = maxp.z;//最大z
+
+
+}
+
 //返回索引index的X值
 HEAD double CallingConvention getX(pcl::PointCloud<pcl::PointXYZ> * pc, int index)
 {
