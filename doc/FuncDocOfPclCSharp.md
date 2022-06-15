@@ -5,7 +5,7 @@
 
 # 2 PointCloudSharp命名空间
 
-PointCloudSharp中封装了pcl中存储点云的基本数据结构，包括`pcl::PointCloud<pcl::PointXYZ>`、`vector<pcl::PointIndices>`和`pcl::PointCloud<pcl::Normal>`等。目前封装好的只有`pcl::PointCloud<pcl::PointXYZ>`、`vector<pcl::PointIndices>`这两类，其他的数据结构后续逐步封装。
+PointCloudSharp中封装了pcl中存储点云的基本数据结构，包括`pcl::PointCloud<pcl::PointXYZ>`、`vector<pcl::PointIndices>`和`pcl::PointCloud<pcl::Normal>`等。目前封装好的只有**`pcl::PointCloud<pcl::PointXYZ>`、`vector<pcl::PointIndices>`这两类，其他的数据结构后续逐步封装**。
 
 ## 2.1 PointCloudXYZ
 
@@ -23,7 +23,7 @@ PointCloudSharp中封装了pcl中存储点云的基本数据结构，包括`pcl:
 
 3.Size:整个点云的数量。
 
-4.PointCloudXYZPointer:最重要的属性！该属性实际是PCL中`pcl::PointCloud<pcl::PointXYZ> *`。为了提高运行效率，使用数组不是合适的选择。所以必须要把C++中的`pcl::PointCloud<pcl::PointXYZ> *`封装给C#使用。该属性在C#中是一个IntPtr类型，里面包含了所有的点云信息。
+4.PointCloudXYZPointer:最重要的属性！**该属性实际是PCL中`pcl::PointCloud<pcl::PointXYZ> *`**。为了提高运行效率，使用数组不是合适的选择。所以必须要把C++中的`pcl::PointCloud<pcl::PointXYZ> *`封装给C#使用。该属性在C#中是一个**IntPtr类型**，里面包含了所有的点云信息。
 
 ### 2.1.2方法介绍
 
@@ -73,13 +73,13 @@ public void Clear()
 
 ## 2.2 PointIndices
 
-该类是对`vector<pcl::PointIndices>` 的封装，主要是为了解决存储区域生长分割结果的问题。点云经过区域生长之后，会被分为n个点簇，每个点簇用点的索引表示，也就是pcl中的`pcl::PointIndices` 。整个结果用一个vector存储，也就是`vector<pcl::PointIndices>` 。C#中没有类似的结构，所以将其封装为PointIndices类供C#使用。
+该类是对`vector<pcl::PointIndices>` 的封装，**主要是为了解决存储分割结果的问题**。点云经过分割之后，会被分为n个点簇，每个点簇用点的索引表示，也就是pcl中的`pcl::PointIndices` 。整个结果用一个vector存储，也就是`vector<pcl::PointIndices>` 。C#中没有类似的结构，所以将其封装为PointIndices类供C#使用。
 
 ### 2.2.1 属性介绍
 
 1.Size:分割出来的点簇数量
 
-2.PointIndicesPointer:该属性实际是PCL中`vector<pcl::PointIndices> *`，在C#中是一个IntPtr类型，里面包含了所有的点簇信息。
+2.PointIndicesPointer:**该属性实际是PCL中`vector<pcl::PointIndices> *`**，在C#中是一个IntPtr类型，里面包含了所有的点簇信息。
 
 ### 2.2.2 方法介绍
 
@@ -108,9 +108,9 @@ public int GetSizeOfIndice(int index)
 
 # 3 PclCSharp命名空间
 
-该命名空间中包含了pcl中点云处理的算法，暂时封装了Io、Filter、Segmentation、SampleConsensus和Util五个静态类，每个类大体对应着pcl的一个模块，后续有空会慢慢增加其他模块。各个类之间的依赖关系见下图
+该命名空间中包含了pcl中点云处理的算法，暂时封装了**Io、Filter、Segmentation、SampleConsensus和Util**五个静态类，每个类大体对应着pcl的一个模块，后续有空会慢慢增加其他模块。各个类之间的依赖关系见下图
 
-![](C:\Users\user\Desktop\DD马达端面跳动测量技术汇报520\PclCSharp.png)
+![](FuncDocOfPclCSharp.assets/PclCSharp.png)
 
 ## 3.1 Io
 
@@ -175,7 +175,7 @@ public static extern void uniformDownSample(IntPtr in_pc,double radius,IntPtr ou
 
 通过构建指定半径的球体对点云进行下采样滤波，将每一个球内距离球体中心最近的点作为下采样之后的点输出。
 
-![](C:\Users\user\Desktop\DD马达端面跳动测量技术汇报520\均匀下采样图片.png)
+![](FuncDocOfPclCSharp.assets/%E5%9D%87%E5%8C%80%E4%B8%8B%E9%87%87%E6%A0%B7%E5%9B%BE%E7%89%87.png)
 
 ###  3.2.2 staFilter
 
@@ -195,7 +195,7 @@ public static extern void staFilter(IntPtr in_pc, int neighbor_num, float thresh
 
 如下图所示，圆形的半径为距离阈值，则A点邻域有3个点被视为离群点，B、C点邻域各有1个点被视为离群点。
 
-<img src="C:\Users\user\Desktop\DD马达端面跳动测量技术汇报520\统计滤波原理.png" style="zoom:50%;" />
+<img src="FuncDocOfPclCSharp.assets/%E7%BB%9F%E8%AE%A1%E6%BB%A4%E6%B3%A2%E5%8E%9F%E7%90%86.png" style="zoom:50%;" />
 
 ### 3.2.3 passThroughFilter
 
@@ -321,7 +321,7 @@ public static extern void euclideanCluster(IntPtr in_pc, double distance_thresh,
 3 在 Q(p10,p12) 找到一点，重复1，找到p22,p23,p24…全部放进Q里
 
 4 当 Q 再也不能有新点加入了，则完成搜索了；
-![image-20220606223225036](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20220606223225036.png)
+![image-20220606223225036](FuncDocOfPclCSharp.assets/image-20220606223225036.png)
 
 
 
@@ -340,7 +340,7 @@ public static extern void correctPlane(IntPtr in_pc,float[] normal, IntPtr out_p
 ```
 
 算法原理：
- ![](C:\Users\user\Desktop\DD马达端面跳动测量技术汇报520\校正平面.png) 
+ ![](FuncDocOfPclCSharp.assets/%E6%A0%A1%E6%AD%A3%E5%B9%B3%E9%9D%A2.png) 
 
 
 
