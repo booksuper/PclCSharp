@@ -2,7 +2,7 @@
 
 ## 简介
 
-PclCSharp是**Pcl1.8.1**点云库的.Net包装。该库能使用户在C#、VB.net等基于.NET框架的语言中使用。目前仅支持Windows X64平台。
+PclCSharp是**Pcl1.8.1**点云库的.Net包装。该库能使用户在C#、VB.net等基于.NET框架的语言中使用。该库主要集成了pcl库的点云处理功能，并没有封装点云的显示功能。因为在pcl中，点云的显示是靠vtk实现的，而vtk有C#的版本。用户可以使用vtk可视化点云，使用该库对点云进行处理。目前该库仅支持Windows X64平台。
 
 # 1 使用方法
 
@@ -27,3 +27,9 @@ PointCloudSharp中封装了pcl中存储点云的基本数据结构，包括`pcl:
 该命名空间中包含了pcl中点云处理的算法，暂时封装了Io、Filter、Segmentation、SampleConsensus和Util五个静态类，每个类大体对应着pcl的一个模块，后续会慢慢增加其他模块。各个类之间的依赖关系见下图。具体见doc目录中的函数说明。
 
 <img src="README.assets/PclCSharp.png" style="zoom:120%;" />
+
+# 4 示例
+
+在demo目录中，提供了C#语言的示例。该例子包含显示点云、区域生长、半径滤波、欧式分割等功能。比如在区域生长示例中，使用该库对桌子点云进行区域生长，结果见下图。具体函数实现请见demo目录
+
+![image-20220616215847460](README.assets/image-20220616215847460.png)
