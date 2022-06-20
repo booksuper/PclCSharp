@@ -7,11 +7,11 @@ c:\program files\pcl 1.8.1\3rdparty\flann\include\flann\algorithms\dist.h : warn
 c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): warning C4996: 'pcl::SAC_SAMPLE_SIZE': This map is deprecated and is kept only to prevent breaking existing user code. Starting from PCL 1.8.0 model sample size is a protected member of the SampleConsensusModel class
   c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): note: 参见“pcl::SAC_SAMPLE_SIZE”的声明
 c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(26): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(404): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(502): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(541): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(643): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(682): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(441): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(539): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(578): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(680): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(719): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
 c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(592): warning C4267: “参数”: 从“size_t”转换到“A2”，可能丢失数据
           with
           [
@@ -192,7 +192,7 @@ c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp
               PointInT=pcl::PointXYZ,
               PointOutT=pcl::Normal
           ]
-  c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(240): note: 参见对正在编译的 类 模板 实例化 "pcl::NormalEstimation<pcl::PointXYZ,pcl::Normal>" 的引用
+  c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(277): note: 参见对正在编译的 类 模板 实例化 "pcl::NormalEstimation<pcl::PointXYZ,pcl::Normal>" 的引用
   c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(54): note: 参见对正在编译的 类 模板 实例化 "boost::arg<9>" 的引用
   c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(53): note: 参见对正在编译的 类 模板 实例化 "boost::arg<8>" 的引用
   c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(52): note: 参见对正在编译的 类 模板 实例化 "boost::arg<7>" 的引用
@@ -374,6 +374,6 @@ c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp
           ]
     正在创建库 ..\..\..\bin\PclDll.lib 和对象 ..\..\..\bin\PclDll.exp
   正在生成代码
-  All 3420 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 3490 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
   PclSharpWrapper.vcxproj -> C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclSharpWrapper\..\..\..\bin\PclDll.dll

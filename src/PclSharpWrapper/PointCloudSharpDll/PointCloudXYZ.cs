@@ -176,7 +176,9 @@ namespace PointCloudSharp
         }
 
         ///@brief 获得点云中的极值
-        ///@details 使用一个double数组保存结果，第一第二个元素依次是x的最小值、最大值，后面依次类推
+        ///@param out_res 极值结果
+        ///@details 使用一个double数组保存结果，大小为6.其中，
+        ///第一第二个元素依次是x的最小值、最大值，第三第四个元素是y的最小最大值，后面依次类推
         public void GetMinMaxXYZ(double[] out_res)
         {
             getMinMaxXYZ(_PointCloudPointer, out_res);
