@@ -139,6 +139,26 @@ HEAD int CallingConvention loadPcdFile(char* path, pcl::PointCloud<pcl::PointXYZ
 	}
 
 }
+//加载obj
+HEAD int CallingConvention loadObjFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc)
+{
+	//不能直接使用pcl::io::loadOBJFile这个函数，应该先用loadPolygonFile吧文件加载进PolygonMesh
+	//再用fromPCLPointCloud2进行转换。直接使用pcl::io::loadOBJFile会报错
+	pcl::PolygonMesh mesh;
+	
+	if (pcl::io::loadPolygonFile(path, mesh) < 0)
+	{
+		cout << "load failed" << endl;
+		return 0;
+	} 
+	else
+	{
+		pcl::fromPCLPointCloud2(mesh.cloud, *pc);
+		return 1;
+	}
+
+}
+
 //保存pcd文件
 HEAD void CallingConvention savePcdFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc, int binaryMode)
 {
@@ -164,6 +184,24 @@ HEAD void CallingConvention savePlyFile(char* path, pcl::PointCloud<pcl::PointXY
 		pcl::io::savePLYFile(path, *pc, false);
 	}
 
+}
+//保存obj文件
+
+HEAD void CallingConvention saveObjFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc)
+{
+	//TODO 添加将点云对象保存为obj格式的代码
+
+}
+
+//stl转为点云对象
+HEAD void CallingConvention stl2PointCloud(char * path, pcl::PointCloud<pcl::PointXYZ>* pc)
+{
+	vtkSmartPointer<vtkSTLReader> stlreader = vtkSmartPointer<vtkSTLReader>::New();
+	stlreader->SetFileName(path);
+	stlreader->Update();
+	vtkSmartPointer<vtkPolyData> poly = vtkSmartPointer<vtkPolyData>::New();
+	poly = stlreader->GetOutput();
+	pcl::io::vtkPolyDataToPointCloud(poly, *pc);
 }
 
 

@@ -4,6 +4,12 @@
 #include <iostream>
 #include <vector>
 #include <pcl/io/pcd_io.h>
+#include <vtkSmartPointer.h>
+#include <vtkSTLReader.h>
+#include <vtkPolyData.h>
+#include <pcl/io/vtk_io.h>
+#include <pcl/io/vtk_lib_io.h>//包含vtkpolydata转点云函数
+#include <pcl/io/obj_io.h>
 #include <pcl/filters/uniform_sampling.h>
 #include <pcl/filters/radius_outlier_removal.h>
 #include <pcl/segmentation/region_growing.h>
@@ -47,7 +53,7 @@ void connect_pc(vector<pcl::PointCloud<pcl::PointXYZ>>& input_pc1, pcl::PointClo
 void stdDev_filter(vector<pcl::PointCloud<pcl::PointXYZ>>& input_cloud, vector<pcl::PointCloud<pcl::PointXYZ>>& out_cloud);
 
 /*
-功能：加载ply、pcd格式点云文件，并将点云中的X、Y和Z坐标存储在三个double数组中
+功能：加载ply、pcd格式点云文件，并将点云中的X、Y和Z坐标存储在三个double数组中,函数弃用
 param[in] path 点云文件路径
 param[out] out_x 所有点的X坐标
 param[out] out_y 所有点的Y坐标
@@ -73,6 +79,15 @@ param[out] pc 点云对象
 HEAD int CallingConvention loadPcdFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc);
 
 /*
+功能：加载obj文件
+param[in] path 文件路径
+param[out] pc 点云对象
+成功加载文件返回1，失败则返回0
+*/
+HEAD int CallingConvention loadObjFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc);
+
+
+/*
 功能：保存pcd格式点云文件
 param[in] path 点云文件路径
 param[out] pc 点云对象
@@ -88,6 +103,20 @@ param[out] pc 点云对象
 */
 HEAD void CallingConvention savePlyFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc, int binaryMode);
 
+/*
+功能：将stl格式文件转为点云对象
+param[in] path stl格式文件路径
+param[out] pc 点云对象
+*/
+HEAD void CallingConvention stl2PointCloud(char* path, pcl::PointCloud<pcl::PointXYZ> * pc);
+
+/*
+//TODO 暂未实现该功能 2022620
+功能：点云存为obj格式
+param[in] path 存储路径
+param[out] pc 待存点云对象
+*/
+HEAD void CallingConvention saveObjFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc);
 
 /*
 功能：对点云进行均匀下采样

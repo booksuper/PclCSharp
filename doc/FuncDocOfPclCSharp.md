@@ -63,6 +63,14 @@ public void ReSize(int size)
 ///@param z 压入点的z值
 public void Push(double x, double y, double z)
 
+///@brief 获得点云中的极值
+///@param out_res 极值结果
+///@details 使用一个double数组保存结果，大小为6.其中，
+///第一第二个元素依次是x的最小值、最大值，第三第四个元素是y的最小最大值，后面依次类推
+public void GetMinMaxXYZ(double[] out_res)
+{
+    getMinMaxXYZ(_PointCloudPointer, out_res);
+}
 
 ///@brief 弹出一个点，类似于出栈，弹出的是元素中最后一个点
 public void Pop()
@@ -114,6 +122,8 @@ public int GetSizeOfIndice(int index)
 
 ## 3.1 Io
 
+Io模块中主要包含点云文件的**读取保存功能**，目前可加载pcd、ply、obj和stl格式的文件，**并可将这四种格式文件转成pcd或者ply格式文件。**
+
 ### 3.1.1 loadPlyFile
 
 ```c#
@@ -134,7 +144,25 @@ public static extern int loadPlyFile([MarshalAs(UnmanagedType.LPStr)] string pat
 
 ```
 
-### 3.1.3 savePcdFile
+### 3.1.3 loadObjFile
+
+```c#
+/// @brief 加载obj文件
+/// @param path 文件路径
+/// @param pc 点云对象指针，此处使用PointCloudSharp类的PointCloudPointer属性
+public static extern int loadObjFile([MarshalAs(UnmanagedType.LPStr)] string path, IntPtr pc);
+```
+
+### 3.1.4 stl2PointCloud
+
+```c#
+/// @brief stl文件转为点云对象
+/// @param path 文件路径
+/// @param pc 点云对象指针，此处使用PointCloudSharp类的PointCloudPointer属性
+public static extern void stl2PointCloud([MarshalAs(UnmanagedType.LPStr)] string path, IntPtr pc);
+```
+
+### 3.1.5 savePcdFile
 
 ```c#
 /// @brief 保存pcd文件
@@ -146,7 +174,7 @@ public static extern void savePcdFile([MarshalAs(UnmanagedType.LPStr)] string pa
 
 ```
 
-### 3.1.4 savePlyFile
+### 3.1.6 savePlyFile
 
 ```c#
 /// @brief 保存ply文件
@@ -158,7 +186,11 @@ public static extern void savePlyFile([MarshalAs(UnmanagedType.LPStr)] string pa
 
 ```
 
+### 
+
 ## 3.2 Filter
+
+Filter模块主要实现点云的滤波功能，目前封装了均匀下采样、统计滤波、直通滤波、半径滤波等功能
 
 ### 3.2.1 uniformDownSample
 
@@ -240,6 +272,8 @@ public static extern void radiusFilter(IntPtr in_pc,  double radius, int num_thr
 
 
 ## 3.3 Segmentation
+
+Segmentation模块主要封装了点云的分割功能，目前主要封装了区域生长和欧式分割等功能。
 
 ### 3.3.1 oriGrowRegion
 
@@ -329,6 +363,8 @@ public static extern void euclideanCluster(IntPtr in_pc, double distance_thresh,
 
 ## 3.4 Util
 
+Util模块主要封装了一些实用的工具函数，比如校正平面、根据点云索引复制点云
+
 ### 3.4.1 correctPlane
 
 ```c#
@@ -357,6 +393,8 @@ public static extern void copyPcBaseOnIndice(IntPtr in_pc, IntPtr in_indice, Int
 ```
 
 ## 3.5 SampleConsensus
+
+SampleConsensus模块主要封装了一些基于随机抽样一致性的算法，比如基于Ransac的点云平面拟合等
 
 ### 3.5.1 fitPlane
 
