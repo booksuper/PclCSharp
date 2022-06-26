@@ -9,3 +9,4 @@ C:\Users\user\Desktop\PclCSharp\bin\PclCSharp.pdb
 C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.dll
 C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.pdb
+C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.csprojAssemblyReference.cache

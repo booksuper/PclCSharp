@@ -158,10 +158,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="PclDll.h" />
+    <ClInclude Include="filter.h" />
+    <ClInclude Include="io.h" />
+    <ClInclude Include="pcl_util.h" />
+    <ClInclude Include="sampleConsensus.h" />
+    <ClInclude Include="segmentation.h" />
+    <ClInclude Include="util_module.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PclDll.cpp" />
+    <ClCompile Include="filter.cpp" />
+    <ClCompile Include="io.cpp" />
+    <ClCompile Include="pcl_util.cpp" />
+    <ClCompile Include="sampleConsensus.cpp" />
+    <ClCompile Include="segmentation.cpp" />
+    <ClCompile Include="util_module.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

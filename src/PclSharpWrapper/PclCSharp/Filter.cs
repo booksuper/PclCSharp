@@ -5,6 +5,14 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Copyright (c) 2022, 舒登登
+ * All rights reserved.
+ * Auther:舒登登(ShuDengdeng)
+ * Email:2237380450@qq.com
+ * 2022626,点云滤波功能
+ */
+
 namespace PclCSharp
 {
     public class Filter
@@ -16,6 +24,26 @@ namespace PclCSharp
         /// @note 在DD马达端面跳动测量中，radius建议取100
         [DllImport("PclDll.dll", CallingConvention = CallingConvention.StdCall, EntryPoint = "uniformDownSample", CharSet = CharSet.Auto)]
         public static extern void uniformDownSample(IntPtr in_pc, double radius, IntPtr out_pc);
+
+        /// @brief 对点云进行体素下采样，可有效减少点云数量
+        /// @param in_pc 输入的点云对象指针，使用PointCloudSharp类的PointCloudPointer属性
+        /// @param leaf_size 下采样叶子尺寸，该值越大，采样后点云越稀疏
+        /// @param out_pc 采样后的点云对象指针，使用PointCloudSharp类的PointCloudPointer属性
+        /// @note 采用体素中心点替代体素内的所有点云，这种方法比直接使用中心点要慢，
+        /// 但是更加精确。该采样同时保存点云的形状特征，在提高配准，曲面重建，形状识别等算法速度中非常实用。
+        /// @attention 体素下采样的点并不是点云中的原始点，而是通过计算的中心点，这和均匀下采样不一样
+        /// 均匀下采样的点是点云原始点，所以在高精度测量领域，不应该用体素下采样！！！
+        [DllImport("PclDll.dll", CallingConvention = CallingConvention.StdCall, EntryPoint = "voxelDownSample", CharSet = CharSet.Auto)]
+        public static extern void voxelDownSample(IntPtr in_pc, double leaf_size, IntPtr out_pc);
+
+        /// @brief 对点云进行近似体素下采样，可有效减少点云数量
+        /// @param in_pc 输入的点云对象指针，使用PointCloudSharp类的PointCloudPointer属性
+        /// @param leaf_size 下采样叶子尺寸，该值越大，采样后点云越稀疏
+        /// @param out_pc 采样后的点云对象指针，使用PointCloudSharp类的PointCloudPointer属性
+        /// @note 近似体素下采样比体素下采样速度更快，同样参数的情况下，采样后的点数也更多。它逼近的是体素质心
+       
+        [DllImport("PclDll.dll", CallingConvention = CallingConvention.StdCall, EntryPoint = "approximateVoxelDownSample", CharSet = CharSet.Auto)]
+        public static extern void approximateVoxelDownSample(IntPtr in_pc, double leaf_size, IntPtr out_pc);
 
         /// @brief 对点云进行直通滤波处理
         /// @details 直通滤波是一种依赖于坐标的滤波方法。通过指定要滤波的轴，并设置要过滤的大小区间来进行滤波
