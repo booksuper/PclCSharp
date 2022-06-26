@@ -1,379 +1,40 @@
 ﻿D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
 D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(x64\Release\)包含从另一个项目(PclSharpWrapper.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
-  PclDll.cpp
+  filter.cpp
+  Unknown compiler version - please run the configure tests and report the results
+c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\pcl 1.8.1\3rdparty\flann\include\flann\algorithms\dist.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  io.cpp
+  Unknown compiler version - please run the configure tests and report the results
+c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  pcl_util.cpp
+  Unknown compiler version - please run the configure tests and report the results
+c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  sampleConsensus.cpp
+  Unknown compiler version - please run the configure tests and report the results
+c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): warning C4996: 'pcl::SAC_SAMPLE_SIZE': This map is deprecated and is kept only to prevent breaking existing user code. Starting from PCL 1.8.0 model sample size is a protected member of the SampleConsensusModel class
+  c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): note: 参见“pcl::SAC_SAMPLE_SIZE”的声明
+c:\program files\pcl 1.8.1\3rdparty\flann\include\flann\algorithms\dist.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  segmentation.cpp
   Unknown compiler version - please run the configure tests and report the results
 c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\pcl 1.8.1\3rdparty\flann\include\flann\algorithms\dist.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): warning C4996: 'pcl::SAC_SAMPLE_SIZE': This map is deprecated and is kept only to prevent breaking existing user code. Starting from PCL 1.8.0 model sample size is a protected member of the SampleConsensusModel class
   c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): note: 参见“pcl::SAC_SAMPLE_SIZE”的声明
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(26): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(441): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(539): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(578): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(680): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(719): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(592): warning C4267: “参数”: 从“size_t”转换到“A2”，可能丢失数据
-          with
-          [
-              A2=int
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(1354): note: 参见对正在编译的函数 模板 实例化“R boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>::operator ()<int,F,boost::_bi::rrlist5<A1,A2,A3,A4,A5>>(boost::_bi::type<int>,F &,A &,long)”的引用
-          with
-          [
-              R=int,
-              F=boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,
-              A1=const pcl::PointCloud<pcl::PointXYZ> &,
-              A2=size_t,
-              A3=double,
-              A4=std::vector<int,std::allocator<int>> &,
-              A5=std::vector<float,std::allocator<float>> &,
-              A=boost::_bi::rrlist5<const pcl::PointCloud<pcl::PointXYZ> &,size_t,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(1354): note: 参见对正在编译的函数 模板 实例化“R boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>::operator ()<int,F,boost::_bi::rrlist5<A1,A2,A3,A4,A5>>(boost::_bi::type<int>,F &,A &,long)”的引用
-          with
-          [
-              R=int,
-              F=boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,
-              A1=const pcl::PointCloud<pcl::PointXYZ> &,
-              A2=size_t,
-              A3=double,
-              A4=std::vector<int,std::allocator<int>> &,
-              A5=std::vector<float,std::allocator<float>> &,
-              A=boost::_bi::rrlist5<const pcl::PointCloud<pcl::PointXYZ> &,size_t,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(138): note: 参见对正在编译的函数 模板 实例化“int boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<PointT> &,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>::operator ()<const pcl::PointCloud<PointT>&,T,double,std::vector<_Ty,std::allocator<_Ty>>&,std::vector<float,std::allocator<float>>&>(A1,A2 &&,A3 &&,A4,A5)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=size_t,
-              A1=const pcl::PointCloud<pcl::PointXYZ> &,
-              A2=size_t,
-              A3=double,
-              A4=std::vector<int,std::allocator<int>> &,
-              A5=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(138): note: 参见对正在编译的函数 模板 实例化“int boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<PointT> &,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>::operator ()<const pcl::PointCloud<PointT>&,T,double,std::vector<_Ty,std::allocator<_Ty>>&,std::vector<float,std::allocator<float>>&>(A1,A2 &&,A3 &&,A4,A5)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=size_t,
-              A1=const pcl::PointCloud<pcl::PointXYZ> &,
-              A2=size_t,
-              A3=double,
-              A4=std::vector<int,std::allocator<int>> &,
-              A5=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(132): note: 编译 类 模板 成员函数 "R boost::detail::function::function_obj_invoker5<FunctionObj,R,T0,T1,T2,T3,T4>::invoke(boost::detail::function::function_buffer &,T0,T1,T2,T3,T4)" 时
-          with
-          [
-              R=int,
-              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(925): note: 参见对正在编译的函数 模板 实例化“R boost::detail::function::function_obj_invoker5<FunctionObj,R,T0,T1,T2,T3,T4>::invoke(boost::detail::function::function_buffer &,T0,T1,T2,T3,T4)”的引用
-          with
-          [
-              R=int,
-              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(925): note: 参见对正在编译的 类 模板 实例化 "boost::detail::function::function_obj_invoker5<FunctionObj,R,T0,T1,T2,T3,T4>" 的引用
-          with
-          [
-              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>,
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(716): note: 参见对正在编译的函数 模板 实例化“void boost::function5<R,T0,T1,T2,T3,T4>::assign_to<Functor>(Functor)”的引用
-          with
-          [
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(716): note: 参见对正在编译的函数 模板 实例化“void boost::function5<R,T0,T1,T2,T3,T4>::assign_to<Functor>(Functor)”的引用
-          with
-          [
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1062): note: 参见对正在编译的函数 模板 实例化“boost::function5<R,T0,T1,T2,T3,T4>::function5<boost::_bi::bind_t<R,boost::_mfi::cmf5<R,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<PointT> &,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor,int)”的引用
-          with
-          [
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &,
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1061): note: 参见对正在编译的函数 模板 实例化“boost::function5<R,T0,T1,T2,T3,T4>::function5<boost::_bi::bind_t<R,boost::_mfi::cmf5<R,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<PointT> &,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor,int)”的引用
-          with
-          [
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &,
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1114): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::function<boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointT>,const pcl::PointCloud<PointT> &,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor,int)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1114): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::function<boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointT>,const pcl::PointCloud<PointT> &,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor,int)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
-          ]
-  c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\features\impl\feature.hpp(160): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)> &boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::operator =<boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointT>,const pcl::PointCloud<PointT> &,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
-          ]
-  c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\features\impl\feature.hpp(160): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)> &boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::operator =<boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointT>,const pcl::PointCloud<PointT> &,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
-          ]
-  c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\features\impl\feature.hpp(94): note: 编译 类 模板 成员函数 "bool pcl::Feature<PointInT,PointOutT>::initCompute(void)" 时
-          with
-          [
-              PointInT=pcl::PointXYZ,
-              PointOutT=pcl::Normal
-          ]
-  c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\features\impl\feature.hpp(191): note: 参见对正在编译的函数 模板 实例化“bool pcl::Feature<PointInT,PointOutT>::initCompute(void)”的引用
-          with
-          [
-              PointInT=pcl::PointXYZ,
-              PointOutT=pcl::Normal
-          ]
-  c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\features\normal_3d.h(200): note: 参见对正在编译的 类 模板 实例化 "pcl::Feature<PointInT,PointOutT>" 的引用
-          with
-          [
-              PointInT=pcl::PointXYZ,
-              PointOutT=pcl::Normal
-          ]
-  c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\pcldll.cpp(277): note: 参见对正在编译的 类 模板 实例化 "pcl::NormalEstimation<pcl::PointXYZ,pcl::Normal>" 的引用
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(54): note: 参见对正在编译的 类 模板 实例化 "boost::arg<9>" 的引用
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(53): note: 参见对正在编译的 类 模板 实例化 "boost::arg<8>" 的引用
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(52): note: 参见对正在编译的 类 模板 实例化 "boost::arg<7>" 的引用
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(51): note: 参见对正在编译的 类 模板 实例化 "boost::arg<6>" 的引用
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(50): note: 参见对正在编译的 类 模板 实例化 "boost::arg<5>" 的引用
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(49): note: 参见对正在编译的 类 模板 实例化 "boost::arg<4>" 的引用
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(48): note: 参见对正在编译的 类 模板 实例化 "boost::arg<3>" 的引用
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(47): note: 参见对正在编译的 类 模板 实例化 "boost::arg<2>" 的引用
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(46): note: 参见对正在编译的 类 模板 实例化 "boost::arg<1>" 的引用
-c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(666): warning C4267: “参数”: 从“size_t”转换到“A2”，可能丢失数据
-          with
-          [
-              A2=int
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(1354): note: 参见对正在编译的函数 模板 实例化“R boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>::operator ()<int,F,boost::_bi::rrlist5<A1,A2,A3,A4,A5>>(boost::_bi::type<T>,F &,A &,long)”的引用
-          with
-          [
-              R=int,
-              T=int,
-              F=boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,
-              A1=const pcl::PointCloud<pcl::PointXYZ> &,
-              A2=size_t,
-              A3=double,
-              A4=std::vector<int,std::allocator<int>> &,
-              A5=std::vector<float,std::allocator<float>> &,
-              A=boost::_bi::rrlist5<const pcl::PointCloud<pcl::PointXYZ> &,size_t,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(1354): note: 参见对正在编译的函数 模板 实例化“R boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>::operator ()<int,F,boost::_bi::rrlist5<A1,A2,A3,A4,A5>>(boost::_bi::type<T>,F &,A &,long)”的引用
-          with
-          [
-              R=int,
-              T=int,
-              F=boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,
-              A1=const pcl::PointCloud<pcl::PointXYZ> &,
-              A2=size_t,
-              A3=double,
-              A4=std::vector<int,std::allocator<int>> &,
-              A5=std::vector<float,std::allocator<float>> &,
-              A=boost::_bi::rrlist5<const pcl::PointCloud<pcl::PointXYZ> &,size_t,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(138): note: 参见对正在编译的函数 模板 实例化“int boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<PointT> &,int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>>::operator ()<const pcl::PointCloud<PointT>&,unsigned __int64,double,std::vector<_Ty,std::allocator<_Ty>>&,std::vector<float,std::allocator<float>>&>(A1,A2 &&,A3 &&,A4,A5)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=int,
-              A1=const pcl::PointCloud<pcl::PointXYZ> &,
-              A2=size_t,
-              A3=double,
-              A4=std::vector<int,std::allocator<int>> &,
-              A5=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(138): note: 参见对正在编译的函数 模板 实例化“int boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<PointT> &,int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>>::operator ()<const pcl::PointCloud<PointT>&,unsigned __int64,double,std::vector<_Ty,std::allocator<_Ty>>&,std::vector<float,std::allocator<float>>&>(A1,A2 &&,A3 &&,A4,A5)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=int,
-              A1=const pcl::PointCloud<pcl::PointXYZ> &,
-              A2=size_t,
-              A3=double,
-              A4=std::vector<int,std::allocator<int>> &,
-              A5=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(132): note: 编译 类 模板 成员函数 "R boost::detail::function::function_obj_invoker5<FunctionObj,R,T0,T1,T2,T3,T4>::invoke(boost::detail::function::function_buffer &,T0,T1,T2,T3,T4)" 时
-          with
-          [
-              R=int,
-              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(925): note: 参见对正在编译的函数 模板 实例化“R boost::detail::function::function_obj_invoker5<FunctionObj,R,T0,T1,T2,T3,T4>::invoke(boost::detail::function::function_buffer &,T0,T1,T2,T3,T4)”的引用
-          with
-          [
-              R=int,
-              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(925): note: 参见对正在编译的 类 模板 实例化 "boost::detail::function::function_obj_invoker5<FunctionObj,R,T0,T1,T2,T3,T4>" 的引用
-          with
-          [
-              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>,
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(716): note: 参见对正在编译的函数 模板 实例化“void boost::function5<R,T0,T1,T2,T3,T4>::assign_to<Functor>(Functor)”的引用
-          with
-          [
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(716): note: 参见对正在编译的函数 模板 实例化“void boost::function5<R,T0,T1,T2,T3,T4>::assign_to<Functor>(Functor)”的引用
-          with
-          [
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1062): note: 参见对正在编译的函数 模板 实例化“boost::function5<R,T0,T1,T2,T3,T4>::function5<boost::_bi::bind_t<R,boost::_mfi::cmf6<R,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<PointT> &,int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>>>(Functor,int)”的引用
-          with
-          [
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &,
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1061): note: 参见对正在编译的函数 模板 实例化“boost::function5<R,T0,T1,T2,T3,T4>::function5<boost::_bi::bind_t<R,boost::_mfi::cmf6<R,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<PointT> &,int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>>>(Functor,int)”的引用
-          with
-          [
-              R=int,
-              T0=const pcl::PointCloud<pcl::PointXYZ> &,
-              T1=size_t,
-              T2=double,
-              T3=std::vector<int,std::allocator<int>> &,
-              T4=std::vector<float,std::allocator<float>> &,
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1114): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::function<boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<PointT>,const pcl::PointCloud<PointT> &,int,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>>>(Functor,int)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>
-          ]
-  c:\program files\pcl 1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1114): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::function<boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<PointT>,const pcl::PointCloud<PointT> &,int,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>>>(Functor,int)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>
-          ]
-  c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\features\impl\feature.hpp(149): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)> &boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::operator =<boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<PointT>,const pcl::PointCloud<PointT> &,int,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>>>(Functor)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>
-          ]
-  c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\features\impl\feature.hpp(149): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)> &boost::function<int (const pcl::PointCloud<PointT> &,size_t,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::operator =<boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<PointT>,const pcl::PointCloud<PointT> &,int,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<T>>>>(Functor)”的引用
-          with
-          [
-              PointT=pcl::PointXYZ,
-              _Ty=int,
-              T=int,
-              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf6<int,pcl::search::Search<pcl::PointXYZ>,const pcl::PointCloud<pcl::PointXYZ> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &,unsigned int>,boost::_bi::list7<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointXYZ>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>,boost::_bi::value<int>>>
-          ]
+  util_module.cpp
+  Unknown compiler version - please run the configure tests and report the results
+c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): warning C4996: 'pcl::SAC_SAMPLE_SIZE': This map is deprecated and is kept only to prevent breaking existing user code. Starting from PCL 1.8.0 model sample size is a protected member of the SampleConsensusModel class
+  c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): note: 参见“pcl::SAC_SAMPLE_SIZE”的声明
+c:\program files\pcl 1.8.1\3rdparty\flann\include\flann\algorithms\dist.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\util_module.cpp(70): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\util_module.cpp(168): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\util_module.cpp(207): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\util_module.cpp(309): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\util_module.cpp(348): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
     正在创建库 ..\..\..\bin\PclDll.lib 和对象 ..\..\..\bin\PclDll.exp
   正在生成代码
-  All 3490 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 3688 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
   PclSharpWrapper.vcxproj -> C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclSharpWrapper\..\..\..\bin\PclDll.dll

@@ -7,6 +7,14 @@
 #include <pcl/io/pcd_io.h>
 #include <pcl/common/common.h>
 
+/*
+ * Copyright (c) 2022, 舒登登
+ * All rights reserved.
+ * Auther:舒登登(ShuDengdeng)
+ * Email:2237380450@qq.com
+ * 给C#层提供Pcl数据结构的接口
+ */
+
 using namespace std;
 
 //定义导出方式：以C语言的方式导出，因为C语言方式函数名保持不变

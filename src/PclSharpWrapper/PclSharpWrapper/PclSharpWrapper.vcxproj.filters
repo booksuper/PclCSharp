@@ -15,12 +15,42 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PclDll.h">
+    <ClInclude Include="filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="segmentation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcl_util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sampleConsensus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util_module.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PclDll.cpp">
+    <ClCompile Include="filter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="io.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="segmentation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcl_util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sampleConsensus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util_module.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

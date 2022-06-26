@@ -5,6 +5,14 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Copyright (c) 2022, 舒登登
+ * All rights reserved.
+ * Auther:舒登登(ShuDengdeng)
+ * Email:2237380450@qq.com
+ * 给用户提供Pcl数据结构PointCloudXYZ的接口
+ */
+
 namespace PointCloudSharp
 {
     public class PointCloudXYZ
@@ -60,7 +68,14 @@ namespace PointCloudSharp
         private int _Width;
         private int _Height;
         private int _Size;
-        
+        //private double[] _MinMaxXYZ;
+        //private double _MinX;
+        //private double _MinY;
+        //private double _MinZ;
+        //private double _MaxX;
+        //private double _MaxY;
+        //private double _MaxZ;
+
 
         //不用布尔值bool是因为C#中bool占4个字节，C++中占1个字节，直接传递会因为字节不一样出错
         // 声明width属性
@@ -93,7 +108,27 @@ namespace PointCloudSharp
             }
 
         }
-        
+
+        //// 声明 MinX 属性
+        //public double MinX
+        //{
+        //    get
+        //    {
+                  //TODO
+                  //2022626
+        //        //备忘录技巧，如果_MinMaxXYZ的值不为0，认为前面已经计算过极值了，就不需要再重复计算
+        //        //有一个问题，点云对象改变了，_MinMaxXYZ值也不为0，但是此时需要重新计算，需要解决这个问题
+        //        //if (_MinMaxXYZ[0] != 0)
+        //        //{
+        //        //    return _MinMaxXYZ[0];
+        //        //}
+                
+        //        getMinMaxXYZ(_PointCloudPointer, _MinMaxXYZ);
+        //        return _MinMaxXYZ[0];
+        //    }
+
+        //}
+
         //析构之后可能出错,目前都运行良好。他日若有问题，优先检查指针问题
         public IntPtr PointCloudXYZPointer
         {
@@ -108,6 +143,8 @@ namespace PointCloudSharp
         ///@details 初始化一个空的点云对象
         public PointCloudXYZ()
         {
+            //_MinMaxXYZ = new double[6] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,};
+            
             _PointCloudPointer = CreatePointCloud();
         }
 
@@ -116,6 +153,7 @@ namespace PointCloudSharp
         ///@param path 点云文件路径
         public PointCloudXYZ(string path)
         {
+            //_MinMaxXYZ = new double[6] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, };
             _PointCloudPointer = loadPcFile(path);
 
         }

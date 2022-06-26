@@ -209,7 +209,36 @@ public static extern void uniformDownSample(IntPtr in_pc,double radius,IntPtr ou
 
 ![](FuncDocOfPclCSharp.assets/%E5%9D%87%E5%8C%80%E4%B8%8B%E9%87%87%E6%A0%B7%E5%9B%BE%E7%89%87.png)
 
-###  3.2.2 staFilter
+### 3.2.2 voxelDownSample
+
+```c#
+/// @brief 对点云进行体素下采样，可有效减少点云数量
+/// @param in_pc 输入的点云对象指针，使用PointCloudSharp类的PointCloudPointer属性
+/// @param leaf_size 下采样叶子尺寸，该值越大，采样后点云越稀疏
+/// @param out_pc 采样后的点云对象指针，使用PointCloudSharp类的PointCloudPointer属性
+/// @note 采用体素中心点替代体素内的所有点云，这种方法比直接使用中心点要慢，
+/// 但是更加精确。该采样同时保存点云的形状特征，在提高配准，曲面重建，形状识别等算法速度中非常实用。
+/// @attention 体素下采样的点并不是点云中的原始点，而是通过计算的中心点，这和均匀下采样不一样
+/// 均匀下采样的点是点云原始点，所以在高精度测量领域，不应该用体素下采样！！！
+public static extern void voxelDownSample(IntPtr in_pc, double leaf_size, IntPtr out_pc);
+```
+
+算法原理：它的原理是根据输入的点云，首先计算一个能够刚好包裹住该点云的立方体，然后根据设定的分辨率，将该大立方体分割成不同的小立方体。对于每一个小立方体内的点，计算他们的质心，并用该质心的坐标来近似该立方体内的若干点。
+
+
+
+### 3.2.3 approximateVoxelDownSample
+
+```c#
+/// @brief 对点云进行近似体素下采样，可有效减少点云数量
+/// @param in_pc 输入的点云对象指针，使用PointCloudSharp类的PointCloudPointer属性
+/// @param leaf_size 下采样叶子尺寸，该值越大，采样后点云越稀疏
+/// @param out_pc 采样后的点云对象指针，使用PointCloudSharp类的PointCloudPointer属性
+/// @note 近似体素下采样比体素下采样速度更快，同样参数的情况下，采样后的点数也更多。它逼近的是体素质心
+public static extern void approximateVoxelDownSample(IntPtr in_pc, double leaf_size, IntPtr out_pc);
+```
+
+###  3.2.4 staFilter
 
 ```c#
 /// @brief 对点云进行统计滤波，可去除离群点
@@ -229,7 +258,7 @@ public static extern void staFilter(IntPtr in_pc, int neighbor_num, float thresh
 
 <img src="FuncDocOfPclCSharp.assets/%E7%BB%9F%E8%AE%A1%E6%BB%A4%E6%B3%A2%E5%8E%9F%E7%90%86.png" style="zoom:50%;" />
 
-### 3.2.3 passThroughFilter
+### 3.2.5 passThroughFilter
 
 ```c#
 /// @brief 对点云进行直通滤波处理
@@ -245,7 +274,7 @@ public static extern void passThroughFilter(IntPtr in_pc, [MarshalAs(UnmanagedTy
 
 ```
 
-### 3.2.4 sigamFilter
+### 3.2.6 sigamFilter
 
 ```c#
 /// @brief sigam法则剔除异常值
@@ -256,7 +285,7 @@ public static extern void passThroughFilter(IntPtr in_pc, [MarshalAs(UnmanagedTy
 public static extern void sigamFilter(IntPtr in_pc, int sigam_thresh, IntPtr out_pc);
 ```
 
-### 3.2.5 radiusFilter
+### 3.2.7 radiusFilter
 
 ```c#
 /// @brief 半径滤波，可去除离群点
