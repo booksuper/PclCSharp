@@ -69,4 +69,4 @@ C:\Users\user\Desktop\PclCSharp\demo\PclCSharpDemo\FilterDemo\bin\Debug\PclCShar
 C:\Users\user\Desktop\PclCSharp\demo\PclCSharpDemo\FilterDemo\bin\Debug\PointCloudSharpDll.dll
 C:\Users\user\Desktop\PclCSharp\demo\PclCSharpDemo\FilterDemo\bin\Debug\PclCSharp.pdb
 C:\Users\user\Desktop\PclCSharp\demo\PclCSharpDemo\FilterDemo\bin\Debug\PointCloudSharpDll.pdb
-C:\Users\user\Desktop\PclCSharp\demo\PclCSharpDemo\FilterDemo\obj\Debug\FilterDemo.FilterDemo.resources
+C:\Users\user\Desktop\PclCSharp\demo\PclCSharpDemo\FilterDemo\obj\Debug\FilterDemo.FilterDemoForm.resources
