@@ -69,6 +69,14 @@ param[out] pc 点云对象
 */
 HEAD int CallingConvention loadObjFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc);
 
+/*
+功能：加载txt文件
+param[in] path 文件路径
+param[out] pc 点云对象
+成功加载文件返回1，失败则返回0
+*/
+HEAD int CallingConvention loadTxtFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc);
+
 
 /*
 功能：保存pcd格式点云文件

@@ -281,5 +281,25 @@ namespace IoDemo
             //第三个参数为0,代表以assii格式存储，参数为1，代表以二进制形式存储。二进制形式读取速度更快
             PclCSharp.Io.savePlyFile("..\\..\\..\\..\\ioDemo.ply", cloud.PointCloudXYZPointer, 0);
         }
+        //加载txt文件
+        private void loadTxtButton_Click(object sender, EventArgs e)
+        {
+            //清空cloud中的点，如果不清空的话，在多次打开新的点云文件时，点数会叠加
+            cloud.Clear();
+            //打开点云文件
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "请选择点云文件";
+            ofd.InitialDirectory = @"\";
+            ofd.Filter = "点云文件|*.txt";
+            ofd.ShowDialog();
+            url = ofd.FileName;
+            PclCSharp.Io.loadTxtFile(url, cloud.PointCloudXYZPointer);
+            vtkRenderer renderer = showPointCloud(cloud);
+            vtkRenderWindow renWin = renderWindowControl1.RenderWindow;
+            // 将“角色Actor”添加到“渲染器Renderer”并渲染
+            renWin.AddRenderer(renderer);
+            //刷新panel，这样就不需要点击一下屏幕才会显示点云
+            panel1.Refresh();
+        }
     }
 }

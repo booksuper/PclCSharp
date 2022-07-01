@@ -4,6 +4,8 @@
 
 ​                                                [![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-%40ShuDengdeng-orange?link=https://github.com/booksuper)](https://github.com/booksuper)[![](https://img.shields.io/badge/Gitee-%40ShuDengdeng-orange?logo=Gitee&link=https://gitee.com/shudengdeng)](https://gitee.com/shudengdeng) ![netFramework](https://img.shields.io/badge/.NET%20Framework%204.6.1-passed-green) ![license](https://img.shields.io/badge/license-BSD--3-brightgreen)
 
+[TOC]
+
 ## 重要更新
 
 2022629，昨天有个用户使用了我的库，但报“未加载PclDLL”这个错误，经过远程指导，终于发现是因为自己在Io模块中增添了VTK相关的函数，但是没在依赖中添加VTK相关的dll。目前这个问题已解决。VTK相关的Dll已经放在depend/x64目录中。
@@ -79,3 +81,6 @@ PointCloudSharp中封装了**该库的数据结构**。目前将`pcl::PointCloud
 对其进行直通滤波，需要滤波的轴设置为x轴，x最小值为0.4，最大为1，结果见下。
 
 <img src="README.assets/image-20220626165616868.png" alt="image-20220626165616868" style="zoom:80%;" />
+
+
+

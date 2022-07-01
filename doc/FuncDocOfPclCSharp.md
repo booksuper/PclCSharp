@@ -1,4 +1,7 @@
+[TOC]
+
 # PclCSharp
+
 ## 1 简介
 
 该文档主要介绍PointCloudSharp命名空间和PclCSharp命名空间中的各个函数。
@@ -162,7 +165,17 @@ public static extern int loadObjFile([MarshalAs(UnmanagedType.LPStr)] string pat
 public static extern void stl2PointCloud([MarshalAs(UnmanagedType.LPStr)] string path, IntPtr pc);
 ```
 
-### 3.1.5 savePcdFile
+### 3.1.5 loadTxtFile
+
+```c#
+/// @brief 加载txt文件
+/// @param path 文件路径
+/// @param pc 点云对象指针，此处使用PointCloudSharp类的PointCloudPointer属性
+/// @attention txt文件内容格式：每个点的坐标数值为一行，xyz三轴坐标间用空格分割，整个文件中除了数字和空格不能有其他东西
+public static extern int loadTxtFile([MarshalAs(UnmanagedType.LPStr)] string path, IntPtr pc);
+```
+
+### 3.1.6 savePcdFile
 
 ```c#
 /// @brief 保存pcd文件
@@ -174,7 +187,7 @@ public static extern void savePcdFile([MarshalAs(UnmanagedType.LPStr)] string pa
 
 ```
 
-### 3.1.6 savePlyFile
+### 3.1.7 savePlyFile
 
 ```c#
 /// @brief 保存ply文件
@@ -185,8 +198,6 @@ public static extern void savePcdFile([MarshalAs(UnmanagedType.LPStr)] string pa
 public static extern void savePlyFile([MarshalAs(UnmanagedType.LPStr)] string path, IntPtr pc, int binaryMode);
 
 ```
-
-### 
 
 ## 3.2 Filter
 

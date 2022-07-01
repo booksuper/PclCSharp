@@ -26,7 +26,14 @@ namespace PclCSharp
         /// @param pc 点云对象指针，此处使用PointCloudSharp类的PointCloudPointer属性
         [DllImport("PclDll.dll", CallingConvention = CallingConvention.StdCall, EntryPoint = "loadObjFile", CharSet = CharSet.Auto)]
         public static extern int loadObjFile([MarshalAs(UnmanagedType.LPStr)] string path, IntPtr pc);
-    
+
+        /// @brief 加载txt文件
+        /// @param path 文件路径
+        /// @param pc 点云对象指针，此处使用PointCloudSharp类的PointCloudPointer属性
+        /// @attention txt文件内容格式为每个点的坐标数值为一行，xyz三轴坐标间用空格分割
+        [DllImport("PclDll.dll", CallingConvention = CallingConvention.StdCall, EntryPoint = "loadTxtFile", CharSet = CharSet.Auto)]
+        public static extern int loadTxtFile([MarshalAs(UnmanagedType.LPStr)] string path, IntPtr pc);
+
         /// @brief 保存pcd文件
         /// @param path 保存的路径
         /// @param pc 点云对象指针，此处使用PointCloudSharp类的PointCloudPointer属性
