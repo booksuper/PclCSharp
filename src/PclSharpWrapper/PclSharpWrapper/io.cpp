@@ -68,6 +68,30 @@ HEAD int CallingConvention loadObjFile(char* path, pcl::PointCloud<pcl::PointXYZ
 	}
 
 }
+//加载txt文件
+HEAD int CallingConvention loadTxtFile(char * path, pcl::PointCloud<pcl::PointXYZ>* pc)
+{
+	
+	ifstream Points_in(path);
+	pcl::PointXYZ tmpoint;
+	if (Points_in.is_open())
+	{
+		while (!Points_in.eof())   //尚未到达文件结尾
+		{
+			//>>操作符会忽略空白符和换行符
+			Points_in >> tmpoint.x >> tmpoint.y >> tmpoint.z;
+			pc->points.push_back(tmpoint);
+		}
+		pc->width = (int)pc->points.size();
+		pc->height = 1;
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+	
+}
 
 //保存pcd文件
 HEAD void CallingConvention savePcdFile(char* path, pcl::PointCloud<pcl::PointXYZ> * pc, int binaryMode)

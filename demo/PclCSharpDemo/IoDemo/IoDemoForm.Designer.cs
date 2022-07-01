@@ -35,6 +35,7 @@
             this.loadStlButton = new System.Windows.Forms.Button();
             this.savePcdButton = new System.Windows.Forms.Button();
             this.savePlyButton = new System.Windows.Forms.Button();
+            this.loadTxtButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // loadPlyButton
@@ -51,7 +52,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(36, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(844, 467);
+            this.panel1.Size = new System.Drawing.Size(958, 467);
             this.panel1.TabIndex = 1;
             // 
             // loadPcdButton
@@ -86,7 +87,7 @@
             // 
             // savePcdButton
             // 
-            this.savePcdButton.Location = new System.Drawing.Point(638, 505);
+            this.savePcdButton.Location = new System.Drawing.Point(752, 505);
             this.savePcdButton.Name = "savePcdButton";
             this.savePcdButton.Size = new System.Drawing.Size(100, 45);
             this.savePcdButton.TabIndex = 3;
@@ -96,7 +97,7 @@
             // 
             // savePlyButton
             // 
-            this.savePlyButton.Location = new System.Drawing.Point(769, 505);
+            this.savePlyButton.Location = new System.Drawing.Point(883, 505);
             this.savePlyButton.Name = "savePlyButton";
             this.savePlyButton.Size = new System.Drawing.Size(111, 45);
             this.savePlyButton.TabIndex = 4;
@@ -104,11 +105,22 @@
             this.savePlyButton.UseVisualStyleBackColor = true;
             this.savePlyButton.Click += new System.EventHandler(this.savePlyButton_Click);
             // 
+            // loadTxtButton
+            // 
+            this.loadTxtButton.Location = new System.Drawing.Point(631, 505);
+            this.loadTxtButton.Name = "loadTxtButton";
+            this.loadTxtButton.Size = new System.Drawing.Size(100, 45);
+            this.loadTxtButton.TabIndex = 5;
+            this.loadTxtButton.Text = "加载txt文件";
+            this.loadTxtButton.UseVisualStyleBackColor = true;
+            this.loadTxtButton.Click += new System.EventHandler(this.loadTxtButton_Click);
+            // 
             // IoDemoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 562);
+            this.ClientSize = new System.Drawing.Size(1020, 562);
+            this.Controls.Add(this.loadTxtButton);
             this.Controls.Add(this.savePlyButton);
             this.Controls.Add(this.savePcdButton);
             this.Controls.Add(this.loadStlButton);
@@ -131,6 +143,7 @@
         private System.Windows.Forms.Button loadStlButton;
         private System.Windows.Forms.Button savePcdButton;
         private System.Windows.Forms.Button savePlyButton;
+        private System.Windows.Forms.Button loadTxtButton;
     }
 }
 

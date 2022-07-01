@@ -35,6 +35,6 @@ c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\util_module.
 c:\users\user\desktop\pclcsharp\src\pclsharpwrapper\pclsharpwrapper\util_module.cpp(348): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
     正在创建库 ..\..\..\bin\PclDll.lib 和对象 ..\..\..\bin\PclDll.exp
   正在生成代码
-  All 3688 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 3695 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
   PclSharpWrapper.vcxproj -> C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclSharpWrapper\..\..\..\bin\PclDll.dll
