@@ -11,7 +11,7 @@ using PclCSharp;
 using PointCloudSharp;
 using Kitware.VTK;
 
-namespace FilterDemo
+namespace SegmentationDemo
 {
     public partial class FilterDemoForm : Form
     {
@@ -204,8 +204,8 @@ namespace FilterDemo
             ofd.Filter = "点云文件|*.pcd";
             ofd.ShowDialog();
             url = ofd.FileName;
-            //加载ply文件，并将点云对象存储到cloud中的PointCloudPointer指针中
-            PclCSharp.Io.loadPcdFile(url, cloud.PointCloudXYZPointer);
+            //加载pcd文件，并将点云对象存储到cloud中的PointCloudPointer指针中
+            Io.loadPcdFile(url, cloud.PointCloudXYZPointer);
 
             vtkRenderer renderer = showPointCloud(cloud);
             vtkRenderWindow renWin = renderWindowControl1.RenderWindow;

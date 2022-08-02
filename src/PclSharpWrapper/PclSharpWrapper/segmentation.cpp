@@ -96,3 +96,74 @@ HEAD void CallingConvention modifiedGrowRegion(pcl::PointCloud<pcl::PointXYZ> * 
 
 
 }
+
+//平面分割
+HEAD void CallingConvention planeModelSegment(pcl::PointCloud<pcl::PointXYZ> * in_pc,
+	double distance_thresh, bool negative, pcl::PointCloud<pcl::PointXYZ> * out_pc, int max_interaions)
+{
+	pcl::ModelCoefficients::Ptr coefficients(new pcl::ModelCoefficients);
+	pcl::PointIndices::Ptr inliers(new pcl::PointIndices);
+	// Create the segmentation object
+	pcl::SACSegmentation<pcl::PointXYZ> seg;
+	// Optional
+	seg.setOptimizeCoefficients(true);
+	// Mandatory
+	seg.setModelType(pcl::SACMODEL_PLANE);
+	seg.setMethodType(pcl::SAC_RANSAC);
+	seg.setMaxIterations(max_interaions);
+	seg.setDistanceThreshold(distance_thresh);
+
+	seg.setInputCloud(in_pc->makeShared());
+	seg.segment(*inliers, *coefficients);
+
+	// 提取点云
+	pcl::ExtractIndices<pcl::PointXYZ> extract;
+	extract.setInputCloud(in_pc->makeShared());
+	extract.setIndices(inliers);
+	extract.setNegative(negative);
+	extract.filter(*out_pc);
+
+
+}
+
+//圆柱分割
+HEAD void CallingConvention cylinderModelSegment(pcl::PointCloud<pcl::PointXYZ> * in_pc,
+	double distance_thresh, double min_radius, double max_radius,
+	bool negative, pcl::PointCloud<pcl::PointXYZ> * out_pc, int neighbor_num, double normal_distance_weight, int max_iterations)
+{
+	pcl::PointCloud<pcl::Normal>::Ptr normals(new pcl::PointCloud<pcl::Normal>());
+	pcl::SACSegmentationFromNormals<pcl::PointXYZ, pcl::Normal> seg;
+	pcl::NormalEstimation<pcl::PointXYZ, pcl::Normal> ne;
+	pcl::search::KdTree<pcl::PointXYZ>::Ptr tree(new pcl::search::KdTree<pcl::PointXYZ>());
+
+	pcl::ModelCoefficients::Ptr coefficients(new pcl::ModelCoefficients);
+	pcl::PointIndices::Ptr inliers(new pcl::PointIndices);
+
+	// 计算点云法向量
+	ne.setInputCloud(in_pc->makeShared());
+	ne.setSearchMethod(tree);
+	ne.setKSearch(neighbor_num);
+	ne.compute(*normals);
+
+	// 设置seg参数
+	seg.setOptimizeCoefficients(true);
+	seg.setModelType(pcl::SACMODEL_CYLINDER);
+	seg.setMethodType(pcl::SAC_RANSAC);
+	seg.setNormalDistanceWeight(normal_distance_weight);
+	seg.setMaxIterations(max_iterations);
+	seg.setDistanceThreshold(distance_thresh);
+	seg.setRadiusLimits(min_radius, max_radius);
+	seg.setInputCloud(in_pc->makeShared());
+	seg.setInputNormals(normals);
+
+	seg.segment(*inliers, *coefficients);
+
+	// 提取点云
+	pcl::ExtractIndices<pcl::PointXYZ> extract;
+	extract.setInputCloud(in_pc->makeShared());
+	extract.setIndices(inliers);
+	extract.setNegative(negative);
+	extract.filter(*out_pc);
+
+
+}

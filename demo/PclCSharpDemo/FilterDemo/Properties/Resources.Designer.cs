@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FilterDemo.Properties
+namespace SegmentationDemo.Properties
 {
 
 
