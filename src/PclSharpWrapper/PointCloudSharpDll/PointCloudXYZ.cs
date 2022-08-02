@@ -49,6 +49,17 @@ namespace PointCloudSharp
         //返回点云对应索引的Z
         [DllImport("PointCloudDll.dll", EntryPoint = "getZ", CharSet = CharSet.Auto)]
         public static extern double getZ(IntPtr PointCloudPointer, int index);
+        
+        //改变点云对应索引的X
+        [DllImport("PointCloudDll.dll", EntryPoint = "setX", CharSet = CharSet.Auto)]
+        public static extern void setX(IntPtr PointCloudPointer, int index,double x);
+        //改变点云对应索引的y
+        [DllImport("PointCloudDll.dll", EntryPoint = "setY", CharSet = CharSet.Auto)]
+        public static extern void setY(IntPtr PointCloudPointer, int index, double y);
+        //改变点云对应索引的z
+        [DllImport("PointCloudDll.dll", EntryPoint = "setZ", CharSet = CharSet.Auto)]
+        public static extern void setZ(IntPtr PointCloudPointer, int index, double z);
+
         //改变点云大小
         [DllImport("PointCloudDll.dll", EntryPoint = "reSize", CharSet = CharSet.Auto)]
         public static extern void reSize(IntPtr PointCloudPointer, int size);
@@ -183,6 +194,30 @@ namespace PointCloudSharp
         public double GetZ(int index)
         {
             return getZ(_PointCloudPointer, index);
+        }
+
+        ///@brief 根据索引改变某点的X值
+        ///@param index 点的索引号
+        ///@param x 想要改变的值
+        public void SetX(int index,double x)
+        {
+            setX(_PointCloudPointer, index,x);
+        }
+
+        ///@brief 根据索引改变某点的Y值
+        ///@param index 点的索引号
+        ///@param y 想要改变的值
+        public void SetY(int index, double y)
+        {
+            setY(_PointCloudPointer, index, y);
+        }
+
+        ///@brief 根据索引改变某点的Z值
+        ///@param index 点的索引号
+        ///@param z 想要改变的值
+        public void SetZ(int index, double z)
+        {
+            setZ(_PointCloudPointer, index, z);
         }
 
         ///@brief 重置点云大小

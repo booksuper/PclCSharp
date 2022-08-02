@@ -6,7 +6,6 @@ D:\c++_example\PclSharpWrapper\PointCloudSharpDll\obj\Release\PointCloudSharpDll
 D:\c++_example\PclSharpWrapper\PointCloudSharpDll\obj\Release\PointCloudSharpDll.pdb
 C:\Users\user\Desktop\PclCSharp\bin\PointCloudSharpDll.dll
 C:\Users\user\Desktop\PclCSharp\bin\PointCloudSharpDll.pdb
-C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PointCloudSharpDll\obj\Release\PointCloudSharpDll.csprojAssemblyReference.cache
 C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PointCloudSharpDll\obj\Release\PointCloudSharpDll.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PointCloudSharpDll\obj\Release\PointCloudSharpDll.dll
 C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PointCloudSharpDll\obj\Release\PointCloudSharpDll.pdb

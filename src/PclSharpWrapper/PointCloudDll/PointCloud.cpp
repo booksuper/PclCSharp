@@ -104,6 +104,22 @@ HEAD double CallingConvention getZ(pcl::PointCloud<pcl::PointXYZ> * pc, int inde
 {
 	return  pc->points[index].z;
 }
+//改变索引index的X值
+HEAD void CallingConvention setX(pcl::PointCloud<pcl::PointXYZ> * pc, int index,double x)
+{
+	pc->points[index].x = x;
+}
+//改变索引index的X值
+HEAD void CallingConvention setY(pcl::PointCloud<pcl::PointXYZ> * pc, int index, double y)
+{
+	pc->points[index].y = y;
+}
+//改变索引index的X值
+HEAD void CallingConvention setZ(pcl::PointCloud<pcl::PointXYZ> * pc, int index, double z)
+{
+	pc->points[index].z = z;
+}
+
 //改变点云的大小
 HEAD void CallingConvention reSize(pcl::PointCloud<pcl::PointXYZ> * pc, int size)
 {

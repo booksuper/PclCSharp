@@ -4,6 +4,6 @@
 c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
     正在创建库 ..\..\..\bin\PointCloudDll.lib 和对象 ..\..\..\bin\PointCloudDll.exp
   正在生成代码
-  All 1524 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 1527 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
   PointCloudDll.vcxproj -> C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PointCloudDll\..\..\..\bin\PointCloudDll.dll

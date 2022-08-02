@@ -219,6 +219,53 @@ namespace IoDemo
             url = ofd.FileName;
             //加载ply文件，并将点云对象存储到cloud中的PointCloudPointer指针中
             PclCSharp.Io.loadPlyFile(url, cloud.PointCloudXYZPointer);
+            double xori = cloud.GetX(0);
+            double yori = cloud.GetY(0);
+            double zori = cloud.GetZ(0);
+            int index = 0;
+            //改变值之后，点的索引可能变了，所以直接循环找到目标数
+            cloud.SetX(0, 10.0);
+            for (int i = 0; i < cloud.Size; i++)
+            {
+                if (cloud.GetX(i) == 10.0)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            double xori2 = cloud.GetX(index);
+            double yori2 = cloud.GetY(index);
+            double zori2 = cloud.GetZ(index);
+            //这个点的索引可能不是0
+            //
+            //
+            //改变值之后，点的索引可能变了，所以直接循环找到目标数
+            cloud.SetY(0, 12.0);
+            for (int i = 0; i < cloud.Size;i++)
+            {
+                if(cloud.GetX(i) == 12.0)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            double xori3 = cloud.GetX(index);
+            double yori3 = cloud.GetY(index);
+            double zori3 = cloud.GetZ(index);
+            cloud.SetZ(0, 14.0);
+            for (int i = 0; i < cloud.Size; i++)
+            {
+                if (cloud.GetX(i) == 14.0)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            double xori4 = cloud.GetX(index);
+            double yori4 = cloud.GetY(index);
+            double zori4 = cloud.GetZ(index);
+
+
 
             vtkRenderer renderer = showPointCloud(cloud);
             vtkRenderWindow renWin = renderWindowControl1.RenderWindow;
