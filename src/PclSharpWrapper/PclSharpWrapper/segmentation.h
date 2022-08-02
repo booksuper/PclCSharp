@@ -55,3 +55,12 @@ HEAD void CallingConvention oriGrowRegion(pcl::PointCloud<pcl::PointXYZ> * in_pc
 HEAD void CallingConvention euclideanCluster(pcl::PointCloud<pcl::PointXYZ> * in_pc,
 	double distance_thresh, int MinClusterSize, int MaxClusterSize,
 	vector<pcl::PointIndices> * out_indice);
+
+//平面分割
+HEAD void CallingConvention planeModelSegment(pcl::PointCloud<pcl::PointXYZ> * in_pc,
+	double distance_thresh, bool negative, pcl::PointCloud<pcl::PointXYZ> * out_pc, int max_iterations);
+
+//圆柱分割
+HEAD void CallingConvention cylinderModelSegment(pcl::PointCloud<pcl::PointXYZ> * in_pc,
+	double distance_thresh, double min_radius, double max_radius, bool negative,
+	pcl::PointCloud<pcl::PointXYZ> * out_pc, int neighbor_num, double normal_distance_weight, int max_iterations);

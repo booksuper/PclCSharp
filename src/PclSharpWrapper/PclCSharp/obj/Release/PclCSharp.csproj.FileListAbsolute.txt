@@ -10,3 +10,9 @@ C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSh
 C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.dll
 C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.pdb
 C:\Users\user\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\PclCSharp\bin\PclCSharp.dll
+C:\Users\admin\Desktop\PclCSharp\bin\PclCSharp.pdb
+C:\Users\admin\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.dll
+C:\Users\admin\Desktop\PclCSharp\src\PclSharpWrapper\PclCSharp\obj\Release\PclCSharp.pdb

@@ -1,4 +1,4 @@
-﻿namespace FilterDemo
+﻿namespace SegmentationDemo
 {
     partial class FilterDemoForm
     {
