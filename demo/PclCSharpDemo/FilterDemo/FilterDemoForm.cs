@@ -11,6 +11,14 @@ using PclCSharp;
 using PointCloudSharp;
 using Kitware.VTK;
 
+/*
+ * Copyright (c) 2022, 舒登登
+ * All rights reserved.
+ * Auther:舒登登(ShuDengdeng)
+ * Email:2237380450@qq.com
+ * Filter模块demo
+ */
+
 namespace FilterDemo
 {
     public partial class FilterDemoForm : Form

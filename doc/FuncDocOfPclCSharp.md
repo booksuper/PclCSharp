@@ -90,6 +90,30 @@ public double GetY(int index)
 ///@param index 点的索引号
 public double GetZ(int index)
 
+///@brief 根据索引改变某点的X值
+///@param index 点的索引号
+///@param x 想要改变的值
+public void SetX(int index,double x)
+{
+    setX(_PointCloudPointer, index,x);
+}
+
+///@brief 根据索引改变某点的Y值
+///@param index 点的索引号
+///@param y 想要改变的值
+public void SetY(int index, double y)
+{
+    setY(_PointCloudPointer, index, y);
+}
+
+///@brief 根据索引改变某点的Z值
+///@param index 点的索引号
+///@param z 想要改变的值
+public void SetZ(int index, double z)
+{
+    setZ(_PointCloudPointer, index, z);
+}
+    
 ///@brief 重置点云大小
 ///@param size 点云的大小
 public void ReSize(int size)
