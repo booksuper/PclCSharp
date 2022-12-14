@@ -24,6 +24,13 @@ using namespace std;
 //定义调用约定，此处选择标准调用约定，也可以用c调用约定
 #define CallingConvention __stdcall
 
+//不同数据结构的宏
+#define POINTXYZ 1
+#define POINTINDICES 1
+#define POINTXYZRGB 0
+
+/*PointCloudXYZ的相关函数接口*/
+#if POINTXYZ
 //返回该类的指针
 HEAD pcl::PointCloud<pcl::PointXYZ> * CallingConvention CreatePointCloud()
 {
@@ -143,9 +150,11 @@ HEAD void CallingConvention clear(pcl::PointCloud<pcl::PointXYZ> * pc)
 	pc->clear();
 }
 
+#endif
 
 
-//点云索引的相关函数
+/*PointIndices的相关函数接口*/
+#if POINTINDICES
 //返回点云索引向量的指针
 HEAD vector<pcl::PointIndices> * CallingConvention CreatePointIndices()
 {
@@ -173,5 +182,33 @@ HEAD int CallingConvention getSizeOfIndice(vector<pcl::PointIndices> * in_indice
 {
 	return (*in_indice)[pos].indices.size();
 }
+#endif
 
 
+/*PointXYZRGB的相关函数接口,尝试使用模板编程，增加泛化性*/
+#if POINTXYZRGB
+//返回该类的指针
+
+HEAD pcl::PointCloud<pcl::PointXYZ> * CallingConvention CreatePointCloud()
+{
+	return new pcl::PointCloud<pcl::PointXYZ>();
+}
+//从点云文件中加载点云
+HEAD pcl::PointCloud<pcl::PointXYZ> * CallingConvention loadPcFile(char * path)
+{
+	pcl::PointCloud<pcl::PointXYZ> * cloud = new pcl::PointCloud<pcl::PointXYZ>();
+
+	if (pcl::io::loadPLYFile(path, *cloud) == -1)
+	{
+		pcl::PointXYZ p(0, 0, 0);
+		cloud->points.push_back(p);
+		return cloud;
+	}
+	else
+	{
+		return cloud;
+	}
+
+}
+
+#endif

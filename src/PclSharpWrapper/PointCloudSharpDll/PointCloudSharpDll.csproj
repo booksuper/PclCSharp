@@ -44,6 +44,7 @@
     <Compile Include="PointCloudNormal.cs" />
     <Compile Include="PointCloudXYZ.cs" />
     <Compile Include="PointIndices.cs" />
+    <Compile Include="PointCloudXYZRGB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
